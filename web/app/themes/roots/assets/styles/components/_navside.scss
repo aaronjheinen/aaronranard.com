@@ -1,0 +1,130 @@
+body.side-nav.open {
+  overflow: hidden;
+  #body-overlay{
+    visibility: visible;
+  }
+}
+.navbar-side{
+  width: 240px;
+  h1{
+    margin:0;
+    a{
+      display:block;
+      background: #f9f9f9;
+      font-size:24px;
+      padding:25px;
+    }
+  }
+}
+#side-nav{
+  bottom: 0;
+  display:block;
+  background: #2775ae;
+  overflow-y:auto;
+  overflow-x:hidden;
+  &.container-badgers{
+    background-color: #a00000;
+    nav ul li a{
+      &:hover{
+        color:#3a0000;
+      }
+      &.current{
+        background-color: #6d0000;
+      }
+    }
+  }
+  hr{
+    display:none;
+    border-top:1px solid #3690d2;
+  }
+  .back-link{
+    position:absolute;
+    bottom:10px;
+  }
+  color: #fff;
+  display: block;
+  left: 0;
+  position: fixed;
+  top: 0;
+  &.shadow{
+    top:50px;
+  }
+  width: 23%;
+  z-index: 9999;
+  -webkit-transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  transition-delay: .1s;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+  -moz-transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  -webkit-overflow-scrolling: touch;
+  nav{
+    font-size: 13px;
+    padding: 0 0 10px 0;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    ul{
+      margin:0;
+      padding:0;
+      list-style-type:none;
+      li{
+        margin:0;
+        padding:0;
+        #sidebar-link-title{
+          text-align: center;
+          i{
+            float:none;
+            margin:10px 0;
+          }
+          p{
+            font-size:28px;
+            margin:5px 0;
+          }
+        }
+        a{
+          display:block;
+          padding:9px 10px;
+          color:#e0e0e0;
+          border-top:1px solid transparent;
+          border-bottom:1px solid transparent;
+          border-left:5px solid transparent;
+          &:hover,
+          &:focus{
+            color:#fff;
+            text-decoration:none;
+          }
+          &.current{
+            background-color: #143d5b;
+            color: #fff;
+          }
+        }
+      }
+      i{
+        float:left;
+        width:30px;
+        line-height: 30px;
+        margin-right:10px;
+      }
+      .sidebar-text{
+        font-size:20px;
+        font-weight: 300;
+        line-height: 30px;
+        margin:0;
+      }
+    }
+  }
+  ul li a{
+    color:#e0e0e0;
+    &:hover,
+    &:focus{
+      color:#fff;
+      text-decoration:none;
+    }
+  }
+}

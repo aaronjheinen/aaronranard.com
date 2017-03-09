@@ -1,0 +1,146 @@
+
+.navbar{
+  border: 0;
+  left:0;
+  padding:0;
+  &.navbar-default{
+    background:#fff;
+    .navbar-nav>li>a {
+      color: #777;
+    }
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+    float:left;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    -webkit-transition: background-color 0.2s ease-out;
+            transition: background-color 0.2s ease-out;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button img {
+    width: 60px;
+    height: 60px;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  button:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 0;
+  }
+
+  button:active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  h1{
+    float:left;
+    font-size:32px;
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto;
+    }
+    a{
+      display:inline-block;
+      width:198px;
+      height:60px;
+      margin-top:5px;
+      background-repeat:no-repeat;
+      &:hover{
+        color:#000;
+      }
+      @include media-breakpoint-down(sm) {
+        background-position-y:-60px;
+        margin-top:20px;
+        height:35px;
+      }
+    }
+  }
+  .nav>li {
+      position: relative;
+      display: block;
+  }
+  .navbar-nav>li {
+    float: left;
+    a{
+      padding: 30px 10px;
+      &:hover{
+        text-decoration: none;
+        color:#000;
+      }
+    }
+  }
+  .navbar-nav>.active>a{
+    background-color:#fff;
+    color:#131313;
+    font-weight:700;
+    &:hover{
+      background-color:#fff;
+    }
+  }
+  &.shadow{
+    box-shadow: 0 0 6px #000e15;
+    h1{
+      margin:10px 0;
+      font-size:18px;
+      font-weight:400;
+      @include media-breakpoint-down(sm) {
+        margin: 0 auto;
+      }
+      a{
+        background-position-y:-60px;
+        height:20px;
+        @include media-breakpoint-down(sm) {
+          height:35px;
+        }
+      }
+    }
+    .navbar-nav>li>a{
+      padding: 15px 10px;
+    }
+  }
+  .nav-primary{
+     margin-left: auto;
+  }
+}
+
+.navbar-content{
+  margin:0 auto;
+  @include media-breakpoint-up(sm) {
+    width: 1140px;
+    max-width: 100%;
+    .navbar-collapse {
+      width:auto;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .navbar,
+  .navbar.shadow{
+    button.menu{
+      width:50px;
+      height:50px;
+      padding:0 0 0 10px;
+      img{
+        width:30px;
+      }
+    }
+    .navbar-nav>li>a{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align:center;
+      border-bottom:1px solid #eee;
+    }
+  }
+  .navbar-nav{
+    margin:0;
+    width:100%;
+  }
+}
