@@ -1,4 +1,4 @@
-<header class="banner navbar navbar-toggleable-md navbar-light navbar-default fixed-top headroom" role="banner">
+<header class="banner navbar navbar-toggleable-md navbar-light fixed-top headroom" role="banner">
   <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>     
