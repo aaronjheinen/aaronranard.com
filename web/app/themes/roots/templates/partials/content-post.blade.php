@@ -3,7 +3,7 @@
     <?php if(get_field( 'thumbnail' )) : ?>
       <?php $image = (get_field( 'thumbnail' )); ?>
       <a href="<?php echo get_permalink(); ?>">
-        <img src="<?php echo $image['url']; ?>" alt="" class="img-circle" width="75px" style="float:left;" />
+        <img src="<?php echo $image['url']; ?>" alt="" class="rounded-circle" width="75px" style="float:left;" />
       </a>
     <?php endif;  ?>
   </div>
