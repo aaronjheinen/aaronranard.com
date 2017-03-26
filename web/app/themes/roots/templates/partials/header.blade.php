@@ -4,11 +4,11 @@
   </button>     
   <div class="navbar-content">
     <h1><a class="navbar-brand" href="<?php echo home_url(); ?>/" style="background-image:url('/assets/img/logo.png');" title="Me :)"></a></h1>
-    <div class="hidden-sm-down">
-      @include('partials/nav')
+    <div class="hidden-md-down">
+      @include('partials/nav', ['class' => 'float-right'])
     </div>
   </div>
-  <div class="hidden-sm-up">
+  <div class="hidden-lg-up">
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       @include('partials/nav')
     </div>
