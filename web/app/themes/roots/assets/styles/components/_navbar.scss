@@ -46,6 +46,7 @@
     font-size:32px;
     @include media-breakpoint-down(md) {
       margin: 0 auto;
+      float: none;
     }
     a{
       display:inline-block;
