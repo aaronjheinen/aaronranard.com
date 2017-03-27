@@ -63,15 +63,17 @@
   <a class="waypoint" name="overview"></a>
   <div class="container-gray container-info">
     <div class="container">
-      <div class="col-md-6">
-        <h3>About the Project</h3>
-        <hr />
-        <?php echo get_field('about'); ?>
-      </div>
-      <div class="col-md-6">
-        <h3>My Role</h3>
-        <hr />
-        <?php echo get_field('my_role'); ?>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>About the Project</h3>
+          <hr />
+          <?php echo get_field('about'); ?>
+        </div>
+        <div class="col-md-6">
+          <h3>My Role</h3>
+          <hr />
+          <?php echo get_field('my_role'); ?>
+        </div>
       </div>
     </div> <!-- end .container -->
   </div>

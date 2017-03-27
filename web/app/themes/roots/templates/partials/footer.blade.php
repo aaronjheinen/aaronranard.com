@@ -1,7 +1,7 @@
 <footer class="content-info" role="contentinfo">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-sm-12">
         <a class="lettering" href="{{ home_url('/') }}"><img src="/assets/img/lettering.png" alt="Me :)" /></a>
         <a class="ic" href="https://gist.github.com/aaronjheinen"><i class="fa fa-github-alt fa-2x"></i></a>
         <a class="ic" href="https://www.goodreads.com/user/show/5713775-aaron-heinen"><i class="fa fa-book fa-2x"></i></a>

@@ -441,11 +441,6 @@ button.menu img {
   padding:100px 0 100px;
 }
 @media (min-width: 992px){
-  #side-nav{
-    .nav{
-      display:none;
-    }
-  }
   .navbar-header{
     .menu{
       display:none;
@@ -474,58 +469,6 @@ button.menu img {
     display:none;
   }
 }
-@media (min-width: 1701px){
-  #side-nav{
-    width:18%;
-  }
-  .single-project.side-nav{
-    .main-content,
-    .navbar,
-    .content-info{
-      margin-left:18%;
-    }
-  }
-}
-@media (max-width: 1550px){
-  #side-nav{
-    nav ul li {
-      #sidebar-link-title p{
-        font-size:21px;
-      }
-      .sidebar-text{
-        font-size:16px;
-      }
-    } 
-  }
-  .single-project.side-nav{
-    .container{
-      width:100%;
-    }
-  }
-}
-@media (max-width: 1200px){
-  #side-nav{
-    hr{
-      display:block;
-    }
-    .tagline{
-      font-size:12px;
-    }
-    nav ul li {
-      #sidebar-link-title p{
-        font-size:18px;
-      }
-      i.fa-2x{
-        font-size:1em;
-        width:15px;
-        height:15px;
-      }
-      .sidebar-text{
-        font-size:15px;
-      }
-    } 
-  }
-}
 @media (max-width: 992px){
   body{
     background:#fff;
@@ -550,17 +493,6 @@ button.menu img {
     height:auto;
     img{
       position:relative;
-    }
-  }
-  #side-nav{
-    overflow:auto;
-    width:80%;
-    left:-80%;
-    &.open{
-      left:0;
-      .container-side{
-        min-height:auto;
-      }
     }
   }
   .now-what{
