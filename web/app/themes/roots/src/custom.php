@@ -80,6 +80,10 @@ add_filter('body_class','custom_field_body_class');
 function custom_field_body_class( $classes ) {
   if ( have_rows('sidebar-nav', get_the_ID()) ) {
     $classes[] = 'side-nav'; 
+    if( get_field('container_class', get_the_ID()) ){
+      // eg. container-burgundy = body_class 'burgundy'
+      $classes[] = str_replace('container-', '', get_field('container_class', get_the_ID()));
+    }
   }
   // return the $classes array
   return $classes;

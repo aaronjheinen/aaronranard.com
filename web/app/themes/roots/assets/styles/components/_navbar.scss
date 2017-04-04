@@ -145,3 +145,21 @@
     width:100%;
   }
 }
+body.burgundy{
+  .navbar{
+    .navbar-brand{
+      /* From Blue to Burgundy */
+      -webkit-filter: brightness(0.8) hue-rotate(140deg); 
+      filter: brightness(0.8) hue-rotate(140deg);
+    }
+  }
+}
+body.badgers{
+  .navbar{
+    .navbar-brand{
+      /* From Blue to Badger Red */
+      -webkit-filter: brightness(0.6) hue-rotate(155deg) saturate(1.5);
+      filter: brightness(0.6) hue-rotate(155deg) saturate(1.5);
+    }
+  }
+}

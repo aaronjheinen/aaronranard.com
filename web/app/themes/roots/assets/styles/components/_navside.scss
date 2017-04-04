@@ -33,6 +33,17 @@ body.side-nav.open {
       }
     }
   }
+  &.container-burgundy{
+    background-color: #ab0c3f;
+    nav ul li a{
+      &:hover{
+        color:#5c0622;
+      }
+      &.current{
+        background-color: #7b092d;
+      }
+    }
+  }
   hr{
     display:none;
     border-top:1px solid #3690d2;

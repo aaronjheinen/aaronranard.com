@@ -1,4 +1,4 @@
-<footer class="content-info" role="contentinfo">
+<footer class="content-info <?php echo get_field('container_class'); ?>" role="contentinfo">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
