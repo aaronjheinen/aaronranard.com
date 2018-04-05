@@ -1,4 +1,9 @@
 // Colors
 $brand-primary:         #2775ae;
 
+// Backwards compatibility
+$brand-danger:          $red;
+$brand-warning:         $yellow;
+$brand-info:            $cyan;
+
 $fa-font-path:          '~font-awesome/fonts';
